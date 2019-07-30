@@ -1,12 +1,13 @@
-package com.example.moneymanager.view.customviews
+package com.example.moneymanager.view.customviews.editetext
 
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
+import android.widget.EditText
 import android.widget.TextView
 
 
-class HeavyText : TextView {
+class BoldEditText : EditText {
 
     constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(context, attrs, defStyle) {
         init()
@@ -21,7 +22,7 @@ class HeavyText : TextView {
     }
 
     private fun init() {
-        val typeface = Typeface.createFromAsset(context.assets, "font/LatoHeavy.ttf")
+        val typeface = Typeface.createFromAsset(context.assets, "font/LatoSemibold.ttf")
         this.typeface = typeface
     }
 }

@@ -1,4 +1,4 @@
-package com.example.moneymanager.view.customviews
+package com.example.moneymanager.view.customviews.textview
 
 import android.content.Context
 import android.graphics.Typeface

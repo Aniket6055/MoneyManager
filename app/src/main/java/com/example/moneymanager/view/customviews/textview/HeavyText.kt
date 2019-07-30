@@ -1,4 +1,4 @@
-package com.example.moneymanager.view.customviews
+package com.example.moneymanager.view.customviews.textview
 
 import android.content.Context
 import android.graphics.Typeface
@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.widget.TextView
 
 
-class MediumText : TextView {
+class HeavyText : TextView {
 
     constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(context, attrs, defStyle) {
         init()
@@ -21,7 +21,7 @@ class MediumText : TextView {
     }
 
     private fun init() {
-        val typeface = Typeface.createFromAsset(context.assets, "font/LatoMedium.ttf")
+        val typeface = Typeface.createFromAsset(context.assets, "font/LatoHeavy.ttf")
         this.typeface = typeface
     }
 }
