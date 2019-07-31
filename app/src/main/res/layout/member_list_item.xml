@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.example.moneymanager.view.customviews.textview.HeavyText
+            android:id="@+id/tvMemberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/ivRemoveMember"
+            android:textSize="16dp"
+            android:textColor="#262626"
+            android:text="ABC"/>
+
+    <ImageView android:layout_width="25dp" android:layout_height="25dp"
+               android:id="@+id/ivRemoveMember"
+               android:padding="5dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/ic_close"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+    />
+
+</RelativeLayout>
